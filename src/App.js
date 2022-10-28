@@ -1,10 +1,13 @@
+import React from 'react';
 import './App.css';
+import Home from './components/Home/home';
 
-function App() {
+function App ( )  {
   return (
-    <div>
-    </div>
-  );
-}
+      <div className='App'>
+          <Home />
+      </div>
 
-export default App;
+  )
+}
+export default App
