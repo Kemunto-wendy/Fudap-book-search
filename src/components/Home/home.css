@@ -1,3 +1,19 @@
-.bar img {
-    background-size: cover;
+.bar h1 {
+  font-size: 7rem;
+  text-align: centre;
+  color: black;
 }
+.bar img {
+width: 15vw;
+margin: 0 auto;
+}
+.bar p {
+  color: black;
+  font-size: 2rem;
+  font-style: italic;
+}
+.bar h3 {
+color: black;
+text-align: right;
+}
+

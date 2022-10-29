@@ -2,6 +2,7 @@ import React from "react";
 import {GrLinkedin} from "react-icons/gr"
 import {FaGithubSquare} from "react-icons/fa"
 import {GrInstagram} from "react-icons/gr"
+import "./social.css"
 
 const Social = ( ) => {
     return (
