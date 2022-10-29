@@ -2,4 +2,7 @@
   text-align: center;
 }
 
-
+body {
+  background-image: url(assets/yellow.jpg);
+  background-size: cover;
+}

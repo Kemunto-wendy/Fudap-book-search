@@ -1,6 +1,6 @@
 .social {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     gap: 0.8rem;
     position: absolute;

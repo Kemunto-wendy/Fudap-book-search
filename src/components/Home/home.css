@@ -6,6 +6,7 @@
 .bar img {
 width: 15vw;
 margin: 0 auto;
+border-radius: 70px;
 }
 .bar p {
   color: black;

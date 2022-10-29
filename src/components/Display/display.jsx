@@ -18,25 +18,21 @@ const Display = ( ) => {
         } , [ ])
     return(
         <div className="icon">
-        <h1>ARE YOU A BOOK LOVER!</h1>
-        <form>
-        <input type="text" id="search" className="search" placeholder="Enter book name" />
-    </form>
     {
         data.map(item => {
             return(
                 <div className="book">
+                <div className="image">
+                <img src={item.imgUrl} alt="cover" />
+                </div>
                 <div className="title">
                 <h1>{item.title}</h1>
                 <h2>{item.subtitle}</h2>
                 </div>
                 <div  className="publish">
-                    <h3>{item.publisher}</h3>
-                    <h4>{item.published}</h4>
-                    <h5>{item.pages}</h5>
-                </div>
-                <div className="image">
-                <img src={item.imgUrl} alt="cover" />
+                    <h3>Publisher: {item.publisher}</h3>
+                    <h4>Date published: {item.published}</h4>
+                    <h5>Pages: {item.pages}</h5>
                 </div>
                 <div className="author">
                 <h4>{item.author}</h4>
