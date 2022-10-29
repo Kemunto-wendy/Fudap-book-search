@@ -4,6 +4,7 @@ import "./display.css"
 const Display = ( ) => {
     const [data, setData] = useState([])
 
+//implemented the get request n
     useEffect(() => {
         const url = "https://fudap-books-api.herokuapp.com/books/"
         fetch(url)
@@ -24,7 +25,24 @@ const Display = ( ) => {
     {
         data.map(item => {
             return(
-                <div>{item.title}</div>
+                <div className="book">
+                <div className="title">
+                <h1>{item.title}</h1>
+                <h2>{item.subtitle}</h2>
+                </div>
+                <div  className="publish">
+                    <h3>{item.publisher}</h3>
+                    <h4>{item.published}</h4>
+                    <h5>{item.pages}</h5>
+                </div>
+                <div className="image">
+                <img src={item.imgUrl} alt="cover" />
+                </div>
+                <div className="author">
+                <h4>{item.author}</h4>
+                </div>
+                </div>
+
             )
         })
     }
