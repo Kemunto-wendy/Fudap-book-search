@@ -3,7 +3,6 @@ import "./display.css"
 
 const Display = ( ) => {
     const [data, setData] = useState([])
-
 //implemented the get request n
     useEffect(() => {
         const url = "https://fudap-books-api.herokuapp.com/books/"
@@ -32,7 +31,7 @@ const Display = ( ) => {
                 <div  className="publish">
                     <h3>Publisher: {item.publisher}</h3>
                     <h4>Date published: {item.published}</h4>
-                    <h5>Pages: {item.pages}</h5>
+                    <h5>Pages:{item.pages}</h5>
                 </div>
                 <div className="author">
                 <h4>{item.author}</h4>

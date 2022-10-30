@@ -10,7 +10,7 @@ border-radius: 70px;
 }
 .bar p {
   color: black;
-  font-size: 2rem;
+  font-size: 4rem;
   font-style: italic;
 }
 .bar h3 {
@@ -18,3 +18,9 @@ color: black;
 text-align: right;
 }
 
+.bar input {
+  width: 300px;
+  height: 60px;
+  font-size: 2rem;
+  font-weight: bolder;
+}
