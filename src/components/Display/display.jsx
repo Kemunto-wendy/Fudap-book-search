@@ -1,9 +1,11 @@
- import React, {useEffect, useState} from "react";
+ import React, {useEffect, useState}  from "react";
 import "./display.css"
+import { useLoading } from "@rest-hooks/hooks";
 
 const Display = ( ) => {
     const [data, setData] = useState([])
-//implemented the get request n
+    const [isLoading, load] = useLoading()
+    //implemented the get request n
     useEffect(() => {
         const url = "https://fudap-books-api.herokuapp.com/books/"
         fetch(url)
@@ -36,6 +38,7 @@ const Display = ( ) => {
                 <div className="author">
                 <h4>{item.author}</h4>
                 </div>
+
                 </div>
 
             )
